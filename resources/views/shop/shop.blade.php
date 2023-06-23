@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Shop')
+@section('title', 'Product')
 
 @section('link')
     <!-- Favicons -->
@@ -26,11 +26,7 @@
 @endsection
 
 @section('style')
-    <style>
-        #portfolio-flters a:hover {
-            cursor: pointer;
-        }
-    </style>
+    <style></style>
 @endsection
 
 <!-- =======================================================
@@ -48,8 +44,8 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">mnovaldayat@gmail.com</a></i>
-                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 831 8465 5468</span></i>
+                        href="mailto:contact@example.com">trmc.contact@gmail.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -66,19 +62,19 @@
 
             <div class="logo d-flex align-items-center">
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
-                        class="img-fluid"></a>
-                <h1 class="text-light ms-2"><a href="index.html">Buy All Goods</a></h1>
+                {{-- <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
+                        class="img-fluid"></a> --}}
+                <h1 class="text-light"><a href="/">Thunder Riders Motorcycle Club</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    {{-- <li><a class="active" href="/dashboard">Back to Admin</a></li> --}}
-                    {{-- <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li> --}}
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ route('about') }}">About</a></li>
+                    <li><a href="{{ route('blog') }}">Blog</a></li>
                     {{-- <li><a href="testimonials.html">Testimonials</a></li> --}}
                     {{-- <li><a href="pricing.html">Pricing</a></li> --}}
-                    {{-- <li><a href="/shop">Shop</a></li> --}}
+                    <li><a class="active" href="/shop">Product</a></li>
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -98,24 +94,13 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li> --}}
-                    {{-- <li><a href="contact.html">Contact</a></li> --}}
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
-            @php
-                use Illuminate\Support\Facades\Auth;
-            @endphp
-
-            @if (Auth::user()->role == 1 || Auth::user()->role == 4)
-                <a href="/dashboard" class="btn btn-sm text-white my-auto px-3 btn-secondary">Back to Dashboard</a>
-            @elseif (Auth::user()->role == 2)
-                <a href="{{ route('sliders.index') }}" class="btn btn-sm text-white my-auto px-3 btn-secondary">Back to
-                    Slider</a>
-            @elseif(Auth::user()->role == 3)
-                {{-- Logout BUTTON --}}
-                <a href="/logout" class="btn btn-sm text-white my-auto px-3 btn-danger">LOGOUT</a>
-            @endif
+            {{-- LOGIN BUTTON --}}
+            <a href="/login" class="btn btn-sm text-white my-auto px-3" style="background-color: #f03c02">LOGIN</a>
 
         </div>
     </header><!-- End Header -->
@@ -127,11 +112,11 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Shop</h2>
-                    {{-- <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li>Blog</li>
-                    </ol> --}}
+                    <h2>Product</h2>
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li>Product</li>
+                    </ol>
                 </div>
 
             </div>
@@ -280,41 +265,42 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Buy All Goods</h3>
+                        <h3>Thunder Riders Motorcycle Club</h3>
                         <p>
                             A108 Adam Street <br>
                             New York, NY 535022<br>
                             United States <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Email:</strong> trmc.contact@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('shop') }}">Shop</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exciting Rides</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Expert Maintenance</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Safety Measures</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Community Events</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exclusive Membership</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Join Our Motor Club Newsletter</h4>
+                        <p>Stay up to date with the latest news, events, and exclusive offers for motorcycle enthusiasts.
+                        </p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -328,7 +314,7 @@
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Flattern</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>M. Noval Hidayat</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
@@ -365,31 +351,4 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('assets-landing/js/main.js') }}"></script>
-
-    {{-- <script>
-        // Ambil elemen form pencarian
-        const searchForm = document.getElementById('search-form');
-        // Ambil input pencarian
-        const searchInput = document.getElementById('search-input');
-        // Ambil semua item portfolio
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-        // Tambahkan event listener pada form pencarian saat submit
-        searchForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah form submit
-
-            const searchTerm = searchInput.value.toLowerCase(); // Ambil nilai input pencarian
-
-            portfolioItems.forEach(function(item) {
-                const title = item.querySelector('.portfolio-info h4').innerText.toLowerCase();
-
-                if (title.indexOf(searchTerm) > -1) {
-                    item.style.display = 'block'; // Tampilkan item jika ada kata kunci yang cocok
-                } else {
-                    item.style.display = 'none'; // Sembunyikan item jika tidak ada kata kunci yang cocok
-                }
-            });
-        });
-    </script> --}}
-
 @endsection

@@ -23,16 +23,11 @@ class CategorySeeder extends Seeder
         Schema::enableForeignKeyConstraints();
 
         $data = [
-            ['name' => 'Skincare'],
-            ['name' => 'Food & Drink'],
-            ['name' => 'Furniture'],
-            ['name' => 'Health'],
-            ['name' => 'Electronic'],
-            ['name' => 'Menswear'],
-            ['name' => 'Muslim Fashion'],
-            ['name' => 'Mother & Baby'],
-            ['name' => 'Automotive'],
-            ['name' => 'Watch'],
+            ['name' => 'Motorcycle'],
+            ['name' => 'Accessories'],
+            ['name' => 'Parts and maintenance'],
+            ['name' => 'Merchandise'],
+            ['name' => 'Books and magazines'],
         ];
 
         foreach ($data as $value) {

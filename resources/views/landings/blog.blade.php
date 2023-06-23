@@ -44,7 +44,7 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">buyallgoods@gmail.com</a></i>
+                        href="mailto:contact@example.com">trmc.contact@gmail.com</a></i>
                 <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
@@ -62,9 +62,9 @@
 
             <div class="logo d-flex align-items-center">
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
-                        class="img-fluid"></a>
-                <h1 class="text-light ms-2"><a href="index.html">Buy All Goods</a></h1>
+                {{-- <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
+                        class="img-fluid"></a> --}}
+                <h1 class="text-light"><a href="/">Thunder Riders Motorcycle Club</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -74,7 +74,7 @@
                     <li><a class="active" href="{{ route('blog') }}">Blog</a></li>
                     {{-- <li><a href="testimonials.html">Testimonials</a></li> --}}
                     {{-- <li><a href="pricing.html">Pricing</a></li> --}}
-                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/shop">Product</a></li>
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -133,31 +133,30 @@
                         <article class="entry">
 
                             <div class="entry-img">
-                                <img src="{{ asset('assets-landing/img/blog/blog-1.jpg') }}" alt=""
+                                <img src="{{ asset('assets-landing/img/blog/blog-5.jpg') }}" alt=""
                                     class="img-fluid">
                             </div>
 
                             <h2 class="entry-title">
-                                <a href="blog-single.html">Latest Product Releases: Explore Our New Collection</a>
+                                <a href="blog-single.html">Discover the Thrill of Thunder Riders Motorcycle Club</a>
                             </h2>
 
                             <div class="entry-meta">
                                 <ul>
                                     <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                            href="blog-single.html">BuyAllGoods Team</a></li>
+                                            href="blog-single.html">Thunder Riders Motorcycle Club</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
                                             href="blog-single.html"><time datetime="2023-06-23">Jun 23, 2023</time></a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                            href="blog-single.html">4 Comments</a></li>
+                                            href="blog-single.html">0 Comments</a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content">
                                 <p>
-                                    We are excited to announce the launch of our latest collection, featuring a wide range
-                                    of high-quality products. From trendy fashion items to innovative gadgets, our new
-                                    collection has something for everyone. Explore our website to discover the newest
-                                    additions to our inventory and stay updated with the latest trends in the market.
+                                    Welcome to the thrilling world of Thunder Riders Motorcycle Club! We are a passionate
+                                    community of motorcycle enthusiasts who live for the open road. Join us as we embark on
+                                    unforgettable journeys, explore breathtaking landscapes, and create lifelong memories.
                                 </p>
                                 <div class="read-more">
                                     <a href="blog-single.html">Read More</a>
@@ -169,33 +168,32 @@
                         <article class="entry">
 
                             <div class="entry-img">
-                                <img src="{{ asset('assets-landing/img/blog/blog-2.jpg') }}" alt=""
+                                <img src="{{ asset('assets-landing/img/blog/blog-6.jpg') }}" alt=""
                                     class="img-fluid">
                             </div>
 
                             <h2 class="entry-title">
-                                <a href="blog-single.html">Discover the Perfect Gifts for Every Occasion</a>
+                                <a href="blog-single.html">Top Motorcycle Routes for Adventurous Riders</a>
                             </h2>
 
                             <div class="entry-meta">
                                 <ul>
                                     <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                            href="blog-single.html">BuyAllGoods Team</a></li>
+                                            href="blog-single.html">Thunder Riders Motorcycle Club</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
                                             href="blog-single.html"><time datetime="2023-06-23">Jun 23, 2023</time></a>
                                     </li>
                                     <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                            href="blog-single.html">6 Comments</a></li>
+                                            href="blog-single.html">2 Comments</a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content">
                                 <p>
-                                    Looking for the perfect gifts for your loved ones? We have you covered! Our extensive
-                                    collection offers a wide range of options for every occasion. Whether it's a birthday,
-                                    anniversary, or any special event, you'll find something unique and thoughtful in our
-                                    curated selection. Explore our gift guides and make your loved ones feel truly special
-                                    with our high-quality products.
+                                    Calling all adventure seekers! Get ready to rev your engines and embark on the most
+                                    thrilling motorcycle routes. Discover breathtaking landscapes, winding roads, and hidden
+                                    gems that will leave you awe-inspired. Join Thunder Riders Motorcycle Club as we share
+                                    our top picks for adventurous riders.
                                 </p>
                                 <div class="read-more">
                                     <a href="blog-single.html">Read More</a>
@@ -207,33 +205,32 @@
                         <article class="entry">
 
                             <div class="entry-img">
-                                <img src="{{ asset('assets-landing/img/blog/blog-3.jpg') }}" alt=""
+                                <img src="{{ asset('assets-landing/img/blog/blog-7.jpg') }}" alt=""
                                     class="img-fluid">
                             </div>
 
                             <h2 class="entry-title">
-                                <a href="blog-single.html">Top Fashion Trends for the Season</a>
+                                <a href="blog-single.html">Safety Tips for Motorcyclists: Ride with Confidence</a>
                             </h2>
 
                             <div class="entry-meta">
                                 <ul>
                                     <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                            href="blog-single.html">BuyAllGoods Team</a></li>
+                                            href="blog-single.html">Thunder Riders Motorcycle Club</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
                                             href="blog-single.html"><time datetime="2023-06-23">Jun 23, 2023</time></a>
                                     </li>
                                     <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                            href="blog-single.html">8 Comments</a></li>
+                                            href="blog-single.html">1 Comment</a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content">
                                 <p>
-                                    Stay up to date with the latest fashion trends this season! We've compiled a list of the
-                                    top fashion trends that will make you look stylish and trendy. From vibrant colors and
-                                    bold prints to statement accessories and must-have wardrobe staples, we've got you
-                                    covered. Explore our fashion guide and elevate your style game with the hottest trends
-                                    of the season.
+                                    Safety should always be a top priority for motorcyclists. At Thunder Riders Motorcycle
+                                    Club, we believe in riding with confidence while ensuring the utmost safety on the road.
+                                    In this blog post, we share essential safety tips, gear recommendations, and best
+                                    practices to enhance your riding experience and protect yourself from potential risks.
                                 </p>
                                 <div class="read-more">
                                     <a href="blog-single.html">Read More</a>
@@ -242,37 +239,36 @@
 
                         </article><!-- End blog entry -->
 
-
                         <article class="entry">
 
                             <div class="entry-img">
-                                <img src="{{ asset('assets-landing/img/blog/blog-4.jpg') }}" alt=""
+                                <img src="{{ asset('assets-landing/img/blog/blog-8.jpg') }}" alt=""
                                     class="img-fluid">
                             </div>
 
                             <h2 class="entry-title">
-                                <a href="blog-single.html">10 Tips for Successful Online Shopping</a>
+                                <a href="blog-single.html">The Thrill of Motorcycle Racing: Join the Thunder Riders
+                                    Team</a>
                             </h2>
 
                             <div class="entry-meta">
                                 <ul>
                                     <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                            href="blog-single.html">BuyAllGoods Team</a></li>
+                                            href="blog-single.html">Thunder Riders Motorcycle Club</a></li>
                                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
                                             href="blog-single.html"><time datetime="2023-06-23">Jun 23, 2023</time></a>
                                     </li>
                                     <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                            href="blog-single.html">5 Comments</a></li>
+                                            href="blog-single.html">3 Comments</a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content">
                                 <p>
-                                    Online shopping has become increasingly popular, and it's important to make the most out
-                                    of your shopping experience. Here are 10 tips for successful online shopping. From
-                                    finding the best deals and discounts to ensuring secure transactions and hassle-free
-                                    returns, we've got you covered. Follow these tips and become a savvy online shopper.
-                                    Happy shopping!
+                                    Are you a speed enthusiast? Join the Thunder Riders Motorcycle Club racing team and
+                                    experience the adrenaline rush of motorcycle racing. In this blog post, we share the
+                                    excitement, challenges, and opportunities that await you as a member of our racing team.
+                                    Discover how you can become a part of our competitive and passionate community.
                                 </p>
                                 <div class="read-more">
                                     <a href="blog-single.html">Read More</a>
@@ -298,7 +294,7 @@
                             <h3 class="sidebar-title">Search</h3>
                             <div class="sidebar-item search-form">
                                 <form action="">
-                                    <input type="text">
+                                    <input type="text" placeholder="Search">
                                     <button type="submit"><i class="bi bi-search"></i></button>
                                 </form>
                             </div><!-- End sidebar search formn-->
@@ -306,71 +302,57 @@
                             <h3 class="sidebar-title">Categories</h3>
                             <div class="sidebar-item categories">
                                 <ul>
-                                    <li><a href="#">General <span>(25)</span></a></li>
-                                    <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                                    <li><a href="#">Travel <span>(5)</span></a></li>
-                                    <li><a href="#">Design <span>(22)</span></a></li>
-                                    <li><a href="#">Creative <span>(8)</span></a></li>
-                                    <li><a href="#">Educaion <span>(14)</span></a></li>
+                                    <li><a href="#">Events <span>(10)</span></a></li>
+                                    <li><a href="#">Rides <span>(5)</span></a></li>
+                                    <li><a href="#">Tips &amp; Tricks <span>(8)</span></a></li>
+                                    <li><a href="#">Motorcycle Maintenance <span>(12)</span></a></li>
+                                    <li><a href="#">Gear &amp; Accessories <span>(15)</span></a></li>
                                 </ul>
                             </div><!-- End sidebar categories-->
 
-                            <h3 class="sidebar-title">Artikel Terbaru</h3>
+                            <h3 class="sidebar-title">Recent Articles</h3>
                             <div class="sidebar-item recent-posts">
                                 <div class="post-item clearfix">
-                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-1.jpg') }}" alt="">
-                                    <h4><a href="blog-single.html">10 Ide Hadiah Terbaik untuk Hari Valentine</a></h4>
-                                    <time datetime="2023-06-23">23 Jun 2023</time>
+                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-6.jpg') }}" alt="">
+                                    <h4><a href="blog-single.html">The Thrill of Group Riding: Exploring the Open Roads
+                                            Together</a></h4>
+                                    <time datetime="2023-06-23">Jun 23, 2023</time>
                                 </div>
 
                                 <div class="post-item clearfix">
-                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-2.jpg') }}" alt="">
-                                    <h4><a href="blog-single.html">Tips Ampuh Mengatur Keuangan untuk Menabung</a></h4>
-                                    <time datetime="2023-06-22">22 Jun 2023</time>
-                                </div>
-
-                                <div class="post-item clearfix">
-                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-3.jpg') }}" alt="">
-                                    <h4><a href="blog-single.html">Panduan Lengkap Memilih Baju Olahraga yang Tepat</a>
+                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-7.jpg') }}" alt="">
+                                    <h4><a href="blog-single.html">Choosing the Right Motorcycle Helmet: Safety First</a>
                                     </h4>
-                                    <time datetime="2023-06-21">21 Jun 2023</time>
+                                    <time datetime="2023-06-22">Jun 22, 2023</time>
                                 </div>
 
                                 <div class="post-item clearfix">
-                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-4.jpg') }}" alt="">
-                                    <h4><a href="blog-single.html">10 Tips Meningkatkan Produktivitas di Tempat Kerja</a>
+                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-8.jpg') }}" alt="">
+                                    <h4><a href="blog-single.html">Essential Gear for Long-Distance Motorcycle Trips</a>
                                     </h4>
-                                    <time datetime="2023-06-20">20 Jun 2023</time>
-                                </div>
-
-                                <div class="post-item clearfix">
-                                    <img src="{{ asset('assets-landing/img/blog/blog-recent-5.jpg') }}" alt="">
-                                    <h4><a href="blog-single.html">Inspirasi Desain Interior Modern untuk Ruang Tamu</a>
-                                    </h4>
-                                    <time datetime="2023-06-19">19 Jun 2023</time>
+                                    <time datetime="2023-06-21">Jun 21, 2023</time>
                                 </div>
                             </div><!-- End sidebar recent posts -->
 
                             <h3 class="sidebar-title">Tags</h3>
                             <div class="sidebar-item tags">
                                 <ul>
-                                    <li><a href="#">App</a></li>
-                                    <li><a href="#">IT</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Mac</a></li>
-                                    <li><a href="#">Design</a></li>
-                                    <li><a href="#">Office</a></li>
-                                    <li><a href="#">Creative</a></li>
-                                    <li><a href="#">Studio</a></li>
-                                    <li><a href="#">Smart</a></li>
+                                    <li><a href="#">Motorcycle</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Riding Gear</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Safety</a></li>
+                                    <li><a href="#">Maintenance</a></li>
                                     <li><a href="#">Tips</a></li>
-                                    <li><a href="#">Marketing</a></li>
+                                    <li><a href="#">Group Riding</a></li>
+                                    <li><a href="#">Accessories</a></li>
                                 </ul>
                             </div><!-- End sidebar tags-->
 
                         </div><!-- End sidebar -->
 
                     </div><!-- End blog sidebar -->
+
 
                 </div>
 
@@ -387,41 +369,42 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Buy All Goods</h3>
+                        <h3>Thunder Riders Motorcycle Club</h3>
                         <p>
                             A108 Adam Street <br>
                             New York, NY 535022<br>
                             United States <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> buyallgoods@gmail.com<br>
+                            <strong>Email:</strong> trmc.contact@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('shop') }}">Product</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exciting Rides</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Expert Maintenance</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Safety Measures</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Community Events</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exclusive Membership</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Join Our Motor Club Newsletter</h4>
+                        <p>Stay up to date with the latest news, events, and exclusive offers for motorcycle enthusiasts.
+                        </p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -435,7 +418,7 @@
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Flattern</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>M. Noval Hidayat</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->

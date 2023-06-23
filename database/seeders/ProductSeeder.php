@@ -25,69 +25,69 @@ class ProductSeeder extends Seeder
         $data = [
             [
                 'category_id' => 1,
-                'name' => 'Serum Brand',
+                'name' => 'Harley Davidson',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 40000,
+                'price' => 273000000,
                 'status' => 'accepted',
                 'created_by' => 2,
                 'verified_by' => 4,
                 'verified_at' => Carbon::now(),
-                'image' => 'portfolio-1.jpg'
+                'image' => 'product-1.jpg'
+            ],
+            [
+                'category_id' => 1,
+                'name' => 'Yamaha R6',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'price' => 270000000,
+                'status' => 'accepted',
+                'created_by' => 2,
+                'verified_by' => 4,
+                'verified_at' => Carbon::now(),
+                'image' => 'product-2.jpg'
+            ],
+            [
+                'category_id' => 3,
+                'name' => 'Hagon Shocks for CB200',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'price' => 6465000,
+                'status' => 'accepted',
+                'created_by' => 2,
+                'verified_by' => 4,
+                'verified_at' => Carbon::now(),
+                'image' => 'product-3.jpg'
+            ],
+            [
+                'category_id' => 3,
+                'name' => 'Michelin Tire',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'price' => 400000,
+                'status' => 'accepted',
+                'created_by' => 2,
+                'verified_by' => 4,
+                'verified_at' => Carbon::now(),
+                'image' => 'product-4.jpg'
+            ],
+            [
+                'category_id' => 5,
+                'name' => 'Motorcycle Magazines',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'price' => 38000,
+                'status' => 'accepted',
+                'created_by' => 2,
+                'verified_by' => 4,
+                'verified_at' => Carbon::now(),
+                'image' => 'product-5.jpg'
             ],
             [
                 'category_id' => 2,
-                'name' => 'Natural Juice',
+                'name' => 'Leather Glove',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 35000,
+                'price' => 149000,
                 'status' => 'accepted',
                 'created_by' => 2,
                 'verified_by' => 4,
                 'verified_at' => Carbon::now(),
-                'image' => 'portfolio-2.jpg'
-            ],
-            [
-                'category_id' => 1,
-                'name' => 'Tube Mockup',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 15000,
-                'status' => 'accepted',
-                'created_by' => 2,
-                'verified_by' => 4,
-                'verified_at' => Carbon::now(),
-                'image' => 'portfolio-3.jpg'
-            ],
-            [
-                'category_id' => 1,
-                'name' => 'Cosmetic Brand',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 30000,
-                'status' => 'accepted',
-                'created_by' => 2,
-                'verified_by' => 4,
-                'verified_at' => Carbon::now(),
-                'image' => 'portfolio-4.jpg'
-            ],
-            [
-                'category_id' => 1,
-                'name' => 'Aerin',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 40000,
-                'status' => 'accepted',
-                'created_by' => 2,
-                'verified_by' => 4,
-                'verified_at' => Carbon::now(),
-                'image' => 'portfolio-5.jpg'
-            ],
-            [
-                'category_id' => 1,
-                'name' => 'Coco Oil',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'price' => 45000,
-                'status' => 'accepted',
-                'created_by' => 2,
-                'verified_by' => 4,
-                'verified_at' => Carbon::now(),
-                'image' => 'portfolio-6.jpg'
+                'image' => 'product-6.jpg'
             ],
             [
                 'category_id' => 2,
@@ -98,7 +98,7 @@ class ProductSeeder extends Seeder
                 'created_by' => 2,
                 'verified_by' => 4,
                 'verified_at' => Carbon::now(),
-                'image' => 'portfolio-7.jpg'
+                'image' => 'product-7.jpg'
             ],
             [
                 'category_id' => 3,
@@ -109,7 +109,7 @@ class ProductSeeder extends Seeder
                 'created_by' => 2,
                 'verified_by' => 4,
                 'verified_at' => Carbon::now(),
-                'image' => 'portfolio-8.jpg'
+                'image' => 'product-8.jpg'
             ],
             [
                 'category_id' => 2,
@@ -120,7 +120,7 @@ class ProductSeeder extends Seeder
                 'created_by' => 2,
                 'verified_by' => 4,
                 'verified_at' => Carbon::now(),
-                'image' => 'portfolio-9.jpg'
+                'image' => 'product-9.jpg'
             ],
         ];
 

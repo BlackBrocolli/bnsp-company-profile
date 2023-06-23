@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name', 100);
             $table->text('description');
             $table->string('image', 100);
-            $table->unsignedDecimal('price', 10, 2);
+            $table->unsignedDecimal('price', 20, 2);
             $table->enum('status', ['accepted', 'rejected', 'waiting']);
             $table->unsignedBigInteger('created_by')->nullable();
             $table->timestamps();

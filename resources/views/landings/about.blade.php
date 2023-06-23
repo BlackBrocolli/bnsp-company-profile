@@ -26,7 +26,11 @@
 @endsection
 
 @section('style')
-    <style></style>
+    <style>
+        #image-about {
+            background: url({{ asset('assets-landing/img/about1.jpg') }}) center center no-repeat;
+        }
+    </style>
 @endsection
 
 <!-- =======================================================
@@ -44,7 +48,7 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">buyallgoods@gmail.com</a></i>
+                        href="mailto:contact@example.com">trmc.contact@gmail.com</a></i>
                 <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
@@ -62,9 +66,9 @@
 
             <div class="logo d-flex align-items-center">
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
-                        class="img-fluid"></a>
-                <h1 class="text-light ms-2"><a href="index.html">Buy All Goods</a></h1>
+                {{-- <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
+                        class="img-fluid"></a> --}}
+                <h1 class="text-light"><a href="/">Thunder Riders Motorcycle Club</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -74,7 +78,7 @@
                     <li><a href="{{ route('blog') }}">Blog</a></li>
                     {{-- <li><a href="testimonials.html">Testimonials</a></li> --}}
                     {{-- <li><a href="pricing.html">Pricing</a></li> --}}
-                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/shop">Product</a></li>
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -127,43 +131,54 @@
             <div class="container">
 
                 <div class="row no-gutters">
-                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-                        data-aos="fade-right"></div>
+                    <div class="image image-about col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+                        data-aos="fade-right" id="image-about"></div>
                     <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
                         <div class="content d-flex flex-column justify-content-center">
-                            <h3 data-aos="fade-up">Welcome to BuyAllGoods</h3>
+                            <h3 data-aos="fade-up">Welcome to Thunder Riders Motorcycle Club</h3>
                             <p data-aos="fade-up">
-                                BuyAllGoods is your ultimate destination for all your online shopping needs. We offer a wide
-                                range of products from various categories to cater to your every requirement. With our
-                                easy-to-use platform and secure payment system, you can shop with confidence and
-                                convenience.
+                                Thunder Riders Motorcycle Club is your ultimate destination for passionate riders. We offer
+                                a thrilling and
+                                inclusive community that celebrates the freedom and excitement of motorcycle riding. With
+                                our dedicated team
+                                and commitment to excellence, we provide exceptional experiences and memorable adventures.
                             </p>
                             <div class="row">
                                 <div class="col-md-6 icon-box" data-aos="fade-up">
                                     <i class="bx bx-receipt"></i>
-                                    <h4>Quality Products</h4>
-                                    <p>We provide only the best quality products to ensure your satisfaction. Our dedicated
-                                        team carefully selects each item to meet our high standards.</p>
+                                    <h4>Passionate Community</h4>
+                                    <p>We bring together like-minded individuals who share a deep passion for motorcycles
+                                        and the open road.
+                                        Join our community and experience the camaraderie and lifelong friendships that come
+                                        with being part
+                                        of Thunder Riders Motorcycle Club.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <i class="bx bx-cube-alt"></i>
-                                    <h4>Fast and Reliable Delivery</h4>
-                                    <p>We understand the importance of timely delivery. That's why we partner with trusted
-                                        shipping services to ensure your orders arrive quickly and safely to your doorstep.
-                                    </p>
+                                    <h4>Thrilling Adventures</h4>
+                                    <p>Embark on exhilarating adventures and explore breathtaking landscapes with our
+                                        organized rides and
+                                        events. Experience the rush of adrenaline as we take you to some of the most scenic
+                                        and exciting
+                                        destinations.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                                     <i class="bx bx-images"></i>
-                                    <h4>Wide Product Selection</h4>
-                                    <p>Explore our extensive collection of products, ranging from electronics and fashion to
-                                        home decor and much more. We strive to offer a diverse range of options to suit your
-                                        preferences.</p>
+                                    <h4>Diverse Riding Experiences</h4>
+                                    <p>From thrilling off-road expeditions to leisurely road trips, Thunder Riders
+                                        Motorcycle Club offers a
+                                        wide variety of riding experiences. Discover the joy of riding through different
+                                        terrains and
+                                        destinations, all while forging unforgettable memories.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                                     <i class="bx bx-shield"></i>
-                                    <h4>Secure Shopping</h4>
-                                    <p>Your security is our top priority. We implement advanced security measures to protect
-                                        your personal information and ensure a safe and secure shopping experience.</p>
+                                    <h4>Safety First</h4>
+                                    <p>Your safety is paramount to us. We prioritize safe riding practices and provide
+                                        guidance on
+                                        maintenance, gear, and responsible riding. Join us to ride with confidence and
+                                        ensure a secure
+                                        riding experience.</p>
                                 </div>
                             </div>
                         </div><!-- End .content-->
@@ -178,9 +193,9 @@
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Our <strong>Team</strong></h2>
-                    <p>Meet the dedicated individuals behind BuyAllGoods. Our team is committed to providing you with
-                        exceptional service and ensuring your satisfaction.</p>
+                    <h2>Our <strong>Leadership</strong></h2>
+                    <p>Meet the key individuals leading Thunder Riders Motorcycle Club. Our team is dedicated to ensuring
+                        the success and camaraderie of our members.</p>
                 </div>
 
                 <div class="row">
@@ -188,7 +203,7 @@
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member" data-aos="fade-up">
                             <div class="member-img">
-                                <img src="{{ asset('assets-landing/img/team/team-1.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('assets-landing/img/team/team-5.jpg') }}" class="img-fluid"
                                     alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -199,7 +214,7 @@
                             </div>
                             <div class="member-info">
                                 <h4>John Doe</h4>
-                                <span>Founder & CEO</span>
+                                <span>Gang Leader</span>
                             </div>
                         </div>
                     </div>
@@ -207,7 +222,7 @@
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member" data-aos="fade-up" data-aos-delay="100">
                             <div class="member-img">
-                                <img src="{{ asset('assets-landing/img/team/team-2.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('assets-landing/img/team/team-7.jpg') }}" class="img-fluid"
                                     alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -217,8 +232,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Jane Smith</h4>
-                                <span>Marketing Director</span>
+                                <h4>Will Smith</h4>
+                                <span>Vice Leader</span>
                             </div>
                         </div>
                     </div>
@@ -226,7 +241,7 @@
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member" data-aos="fade-up" data-aos-delay="200">
                             <div class="member-img">
-                                <img src="{{ asset('assets-landing/img/team/team-3.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('assets-landing/img/team/team-8.jpg') }}" class="img-fluid"
                                     alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -237,7 +252,7 @@
                             </div>
                             <div class="member-info">
                                 <h4>Michael Johnson</h4>
-                                <span>Product Manager</span>
+                                <span>Club Captain</span>
                             </div>
                         </div>
                     </div>
@@ -245,7 +260,7 @@
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="member-img">
-                                <img src="{{ asset('assets-landing/img/team/team-4.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('assets-landing/img/team/team-10.jpg') }}" class="img-fluid"
                                     alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -255,8 +270,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Emily Davis</h4>
-                                <span>Customer Support</span>
+                                <h4>Emilio Davis</h4>
+                                <span>Road Captain</span>
                             </div>
                         </div>
                     </div>
@@ -267,7 +282,7 @@
         </section><!-- End Our Team Section -->
 
         <!-- ======= Our Skills Section ======= -->
-        <section id="skills" class="skills">
+        {{-- <section id="skills" class="skills">
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
@@ -338,18 +353,18 @@
                 </div>
 
             </div>
-        </section><!-- End Our Skills Section -->
+        </section> --}}
+        <!-- End Our Skills Section -->
 
         <!-- ======= Our Clients Section ======= -->
         <section id="clients" class="clients">
             <div class="container">
 
                 <div class="section-title" data-aos="fade-up">
-                    <h2>Our <strong>Clients</strong></h2>
-                    <p>At BuyAllGoods, we are proud to serve a diverse range of clients who trust us for their online
-                        shopping needs. Our commitment to delivering exceptional products and services has earned us the
-                        loyalty of numerous satisfied customers. We value each client and strive to provide them with an
-                        outstanding shopping experience.</p>
+                    <h2>Our <strong>Motor Club Clients</strong></h2>
+                    <p>Explore our wide range of products and find everything you need in one place. With our reliable
+                        delivery and excellent customer support, shopping with us is convenient and enjoyable. Join our
+                        community of satisfied Motor Club Members and experience the best of online shopping.</p>
                 </div>
 
                 <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
@@ -425,41 +440,42 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Buy All Goods</h3>
+                        <h3>Thunder Riders Motorcycle Club</h3>
                         <p>
                             A108 Adam Street <br>
                             New York, NY 535022<br>
                             United States <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> buyallgoods@gmail.com<br>
+                            <strong>Email:</strong> trmc.contact@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog') }}">Blog</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('shop') }}">Product</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exciting Rides</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Expert Maintenance</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Safety Measures</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Community Events</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Exclusive Membership</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Join Our Motor Club Newsletter</h4>
+                        <p>Stay up to date with the latest news, events, and exclusive offers for motorcycle enthusiasts.
+                        </p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -473,7 +489,7 @@
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Flattern</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>M. Noval Hidayat</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->

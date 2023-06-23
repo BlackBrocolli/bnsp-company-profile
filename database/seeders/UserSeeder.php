@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
                 'address' => 'Jl. Raya 2',
                 'password' => '$2y$10$9XrG3diapfjivRYKtipLXupDdbTWnILkVTGFp33u9AFTluTr0Kwju', // staff
             ],
-            [
+            /* [
                 'email' => 'user@gmail.com',
                 'name' => 'User biasa',
                 'role' => 3,
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
                 'phone' => '+6283333333333',
                 'address' => 'Jl. Raya 3',
                 'password' => '$2y$10$eBF5pox4cCfPcQ4pssj9Seqj60Jo3sIfffQsWu.n0bmUANBlVWvFa', // userbiasa
-            ],
+            ], */
             [
                 'email' => 'manager@gmail.com',
                 'name' => 'Manager Toko',

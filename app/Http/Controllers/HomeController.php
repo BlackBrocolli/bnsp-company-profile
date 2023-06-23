@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\ViewProduct;
 use App\Models\Category;
+use App\Models\Gallery;
 use App\Models\Product;
 use App\Models\User;
 use App\Models\User_group;
@@ -24,10 +25,10 @@ class HomeController extends Controller
     {
         // Get active sliders and accepted products
         $sliders = Slider::where('is_active', 1)->latest()->get();
-        $products = Product::where('status', 'accepted')->take(9)->get();
+        $galleries = Gallery::where('is_active', '1')->take(9)->get();
         $categories = Category::orderBy('name')->get();
 
-        return view('landing', compact('sliders', 'products', 'categories'));
+        return view('landing', compact('sliders', 'galleries', 'categories'));
     }
 
     public function dashboard()

@@ -24,21 +24,21 @@ class SliderSeeder extends Seeder
 
         $data = [
             [
-                'title' => 'Welcome to Buy All Goods',
-                'description' => 'Your one-stop destination for all your shopping needs. Explore our website and discover the latest trends, exclusive deals, and exciting offers. Start your shopping journey with us today!',
-                'image' => 'slide-1.jpg',
+                'title' => 'Join Thunder Riders: Ride with Power and Passion',
+                'description' => "Experience the thrill of the open road with Thunder Riders Motorcycle Club. Join our community of passionate riders, discover epic adventures, and forge lifelong friendships. Get ready to unleash the power of your bike and embark on unforgettable journeys.",
+                'image' => 'slide-4.jpg',
                 'is_active' => 1,
             ],
             [
-                'title' => 'Experience the Ultimate Online Shopping Destination',
-                'description' => 'Explore our extensive collection of premium products across various categories, including fashion, electronics, home decor, and more. Immerse yourself in a seamless shopping experience with user-friendly navigation, secure transactions, and prompt delivery.',
-                'image' => 'slide-2.jpg',
+                'title' => "Discover the Spirit of Brotherhood: Thunder Riders Motorcycle Club",
+                'description' => "At Thunder Riders, we celebrate the spirit of brotherhood and camaraderie. Join our esteemed motorcycle club and be a part of a tight-knit community that shares a common passion for motorcycles. Experience the bond that extends beyond the road as we support and uplift each other.",
+                'image' => 'slide-5.jpg',
                 'is_active' => 1,
             ],
             [
-                'title' => 'Unleash Your Style',
-                'description' => 'Discover the latest trends, timeless classics, and must-have pieces that reflect your unique style. From stylish apparel to trendy accessories, we curate a diverse collection to cater to your fashion cravings. Embrace confidence and express yourself through our meticulously selected fashion offerings.',
-                'image' => 'slide-3.jpg',
+                'title' => 'Elevate Your Riding Experience: Thunder Riders Motorcycle Club',
+                'description' => 'Take your riding experience to new heights with Thunder Riders Motorcycle Club. Our club is dedicated to enhancing your journey on two wheels, offering exciting events, skill-building workshops, and unforgettable group rides. Unleash your potential and embrace the freedom of the open road.',
+                'image' => 'slide-6.jpg',
                 'is_active' => 1,
             ],
         ];
