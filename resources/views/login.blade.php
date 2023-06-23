@@ -52,10 +52,10 @@
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
                             <div class="d-flex justify-content-center py-4">
-                                <span class="logo d-flex align-items-center w-auto">
-                                    <img src="{{ asset('assets-dashboard/img/bag-logo.png') }}"
-                                        style="max-width: 50px; max-height: 50px;">
-                                    <span class="d-none d-lg-block">Buy All Goods</span>
+                                <span class="logo d-flex align-items-center w-auto text-center">
+                                    {{-- <img src="{{ asset('assets-dashboard/img/bag-logo.png') }}"
+                                        style="max-width: 50px; max-height: 50px;"> --}}
+                                    <span class="d-none d-lg-block">Thunder Riders Motorcycle Club</span>
                                 </span>
                             </div>
                             <!-- End Logo -->

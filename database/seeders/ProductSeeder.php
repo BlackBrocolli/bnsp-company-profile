@@ -30,7 +30,7 @@ class ProductSeeder extends Seeder
                 'price' => 273000000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-1.jpg'
             ],
@@ -41,7 +41,7 @@ class ProductSeeder extends Seeder
                 'price' => 270000000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-2.jpg'
             ],
@@ -52,7 +52,7 @@ class ProductSeeder extends Seeder
                 'price' => 6465000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-3.jpg'
             ],
@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
                 'price' => 400000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-4.jpg'
             ],
@@ -74,7 +74,7 @@ class ProductSeeder extends Seeder
                 'price' => 38000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-5.jpg'
             ],
@@ -85,7 +85,7 @@ class ProductSeeder extends Seeder
                 'price' => 149000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-6.jpg'
             ],
@@ -96,7 +96,7 @@ class ProductSeeder extends Seeder
                 'price' => 10000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-7.jpg'
             ],
@@ -107,7 +107,7 @@ class ProductSeeder extends Seeder
                 'price' => 15000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-8.jpg'
             ],
@@ -118,7 +118,7 @@ class ProductSeeder extends Seeder
                 'price' => 45000,
                 'status' => 'accepted',
                 'created_by' => 2,
-                'verified_by' => 4,
+                'verified_by' => 3,
                 'verified_at' => Carbon::now(),
                 'image' => 'product-9.jpg'
             ],
