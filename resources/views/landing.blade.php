@@ -44,8 +44,8 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">mnovaldayat@gmail.com</a></i>
-                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 831 8465 5468</span></i>
+                        href="mailto:contact@example.com">buyallgoods@gmail.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -64,14 +64,14 @@
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <a href="/"><img src="{{ asset('assets-dashboard/img/bag-logo.png') }}" alt=""
                         class="img-fluid"></a>
-                <h1 class="text-light ms-2"><a href="index.html">Buy All Goods</a></h1>
+                <h1 class="text-light ms-2"><a href="index.html">Thunder Riders Motor Club</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="active" href="/">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="{{ route('about') }}">About</a></li>
+                    <li><a href="{{ route('blog') }}">Blog</a></li>
                     {{-- <li><a href="testimonials.html">Testimonials</a></li> --}}
                     {{-- <li><a href="pricing.html">Pricing</a></li> --}}
                     <li><a href="/shop">Shop</a></li>
@@ -94,7 +94,7 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li> --}}
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -361,7 +361,7 @@
                             New York, NY 535022<br>
                             United States <br><br>
                             <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Email:</strong> buyallgoods@gmail.com<br>
                         </p>
                     </div>
 

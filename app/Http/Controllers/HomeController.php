@@ -220,4 +220,19 @@ class HomeController extends Controller
             return view('profile.index', compact('navitem', 'navitemchild', 'usergroups', 'active_tab', 'user'))->with(['error_change_password' => "Current password does not match with old password!"]);
         }
     }
+
+    public function about()
+    {
+        return view('landings.about');
+    }
+
+    public function contact()
+    {
+        return view('landings.contact');
+    }
+
+    public function blog()
+    {
+        return view('landings.blog');
+    }
 }

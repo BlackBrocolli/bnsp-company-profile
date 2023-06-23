@@ -30,6 +30,9 @@ Route::post('/register', [AuthController::class, 'processRegister'])->middleware
 
 // route landing page dan dashboard
 Route::get('/', [HomeController::class, 'index'])->middleware('guest');
+Route::get('/about', [HomeController::class, 'about'])->name('about')->middleware('guest');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact')->middleware('guest');
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog')->middleware('guest');
 Route::get('/shop', [HomeController::class, 'shop'])->name('shop')->middleware('auth');
 Route::post('/shop/search', [HomeController::class, 'search'])->name('shop.search')->middleware('auth');
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth', 'must-admin-or-manager']);
